@@ -29,19 +29,18 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
     func updateViews() {
         guard let days = landingPad else { return }
         
         DispatchQueue.main.async {
+            
             self.todayMaxTemperatureLabel.text = String(days[0].temperatureMax)
             self.tomorrowMaxTempLabel.text = String(days[1].temperatureMax)
             self.todayWeatherType.text = String(days[0].weatherType)
             self.tomorrowWeatherType.text = String(days[1].weatherType)
-            
         }
         
         //todayTempLabel.text = weather.daily

@@ -18,26 +18,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2m-s8-h4u">
-                                <rect key="frame" x="187" y="362" width="40" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Provo"/>
-                                <connections>
-                                    <action selector="provoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ct9-G8-OsD"/>
-                                    <segue destination="tbP-D3-XwG" kind="show" identifier="toProvoDetail" id="Sve-aE-Pmh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="env-ms-c19">
-                                <rect key="frame" x="165" y="470" width="84" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Los Angeles"/>
-                                <connections>
-                                    <action selector="losAngelesButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n2x-n0-I7R"/>
-                                    <segue destination="tbP-D3-XwG" kind="show" identifier="toLosAngelesDetail" id="jxf-vC-Czu"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4M1-Xk-nnx">
+                                <rect key="frame" x="0.0" y="416" width="414" height="118"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2m-s8-h4u">
+                                        <rect key="frame" x="164" y="0.0" width="86" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="Provo"/>
+                                        <connections>
+                                            <action selector="provoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ct9-G8-OsD"/>
+                                            <segue destination="tbP-D3-XwG" kind="show" identifier="toProvoDetail" id="Sve-aE-Pmh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="env-ms-c19">
+                                        <rect key="frame" x="115" y="64" width="184" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="Los Angeles"/>
+                                        <connections>
+                                            <action selector="losAngelesButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n2x-n0-I7R"/>
+                                            <segue destination="tbP-D3-XwG" kind="show" identifier="toLosAngelesDetail" id="jxf-vC-Czu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click on a city to see the weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sf-sB-hlN">
+                                <rect key="frame" x="0.0" y="229" width="414" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4M1-Xk-nnx" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="DkS-b4-X2Z"/>
+                            <constraint firstItem="2Sf-sB-hlN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Ifu-OV-HuC"/>
+                            <constraint firstItem="2Sf-sB-hlN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PS3-0l-kBf"/>
+                            <constraint firstItem="4M1-Xk-nnx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fHN-BU-VX6"/>
+                            <constraint firstItem="4M1-Xk-nnx" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="nZH-BI-x6t"/>
+                            <constraint firstItem="2Sf-sB-hlN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="141" id="t4E-Y1-67m"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="ma2-z2-PVZ"/>
@@ -46,7 +65,7 @@
             </objects>
             <point key="canvasLocation" x="957.97101449275374" y="20.758928571428569"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Title-->
         <scene sceneID="f6z-qf-JVJ">
             <objects>
                 <viewController id="tbP-D3-XwG" customClass="DetailViewController" customModule="WeatherAPI" customModuleProvider="target" sceneMemberID="viewController">
@@ -136,6 +155,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pvd-yd-cnb"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="xKb-Vv-ayF"/>
                     <connections>
                         <outlet property="todayMaxTemperatureLabel" destination="XkD-vM-DRs" id="gjH-bj-3Uv"/>
                         <outlet property="todayWeatherType" destination="m8f-es-9Gq" id="QX6-YA-zFS"/>
@@ -167,6 +187,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jxf-vC-Czu"/>
+        <segue reference="Sve-aE-Pmh"/>
     </inferredMetricsTieBreakers>
 </document>
