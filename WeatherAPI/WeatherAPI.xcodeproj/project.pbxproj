@@ -13,6 +13,8 @@
 		FCC678F12305EDD8003E1A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC678F02305EDD8003E1A60 /* Assets.xcassets */; };
 		FCC678F42305EDD8003E1A60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC678F22305EDD8003E1A60 /* LaunchScreen.storyboard */; };
 		FCC679002305F2E9003E1A60 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC678FF2305F2E9003E1A60 /* Weather.swift */; };
+		FCC679022305FC29003E1A60 /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC679012305FC29003E1A60 /* WeatherController.swift */; };
+		FCC67904230604F7003E1A60 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC67903230604F7003E1A60 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FCC678F32305EDD8003E1A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCC678F52305EDD8003E1A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCC678FF2305F2E9003E1A60 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		FCC679012305FC29003E1A60 /* WeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherController.swift; sourceTree = "<group>"; };
+		FCC67903230604F7003E1A60 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				FCC678EB2305EDD7003E1A60 /* ViewController.swift */,
+				FCC67903230604F7003E1A60 /* DetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 		FCC678FE2305F1E2003E1A60 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FCC679012305FC29003E1A60 /* WeatherController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -172,6 +178,8 @@
 			files = (
 				FCC678EC2305EDD7003E1A60 /* ViewController.swift in Sources */,
 				FCC679002305F2E9003E1A60 /* Weather.swift in Sources */,
+				FCC67904230604F7003E1A60 /* DetailViewController.swift in Sources */,
+				FCC679022305FC29003E1A60 /* WeatherController.swift in Sources */,
 				FCC678EA2305EDD7003E1A60 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
