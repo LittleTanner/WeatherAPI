@@ -12,6 +12,7 @@
 		FCC678EF2305EDD7003E1A60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC678ED2305EDD7003E1A60 /* Main.storyboard */; };
 		FCC678F12305EDD8003E1A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC678F02305EDD8003E1A60 /* Assets.xcassets */; };
 		FCC678F42305EDD8003E1A60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC678F22305EDD8003E1A60 /* LaunchScreen.storyboard */; };
+		FCC679002305F2E9003E1A60 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC678FF2305F2E9003E1A60 /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FCC678F02305EDD8003E1A60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCC678F32305EDD8003E1A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCC678F52305EDD8003E1A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC678FF2305F2E9003E1A60 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		FCC678E82305EDD7003E1A60 /* WeatherAPI */ = {
 			isa = PBXGroup;
 			children = (
-				FCC678E92305EDD7003E1A60 /* AppDelegate.swift */,
-				FCC678EB2305EDD7003E1A60 /* ViewController.swift */,
 				FCC678ED2305EDD7003E1A60 /* Main.storyboard */,
+				FCC678FD2305F1DE003E1A60 /* Models */,
+				FCC678FE2305F1E2003E1A60 /* Model Controllers */,
+				FCC678FC2305F1D6003E1A60 /* View Controllers */,
+				FCC678FB2305EFCF003E1A60 /* Resources */,
+			);
+			path = WeatherAPI;
+			sourceTree = "<group>";
+		};
+		FCC678FB2305EFCF003E1A60 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FCC678E92305EDD7003E1A60 /* AppDelegate.swift */,
 				FCC678F02305EDD8003E1A60 /* Assets.xcassets */,
 				FCC678F22305EDD8003E1A60 /* LaunchScreen.storyboard */,
 				FCC678F52305EDD8003E1A60 /* Info.plist */,
 			);
-			path = WeatherAPI;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FCC678FC2305F1D6003E1A60 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FCC678EB2305EDD7003E1A60 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FCC678FD2305F1DE003E1A60 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCC678FF2305F2E9003E1A60 /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FCC678FE2305F1E2003E1A60 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCC678EC2305EDD7003E1A60 /* ViewController.swift in Sources */,
+				FCC679002305F2E9003E1A60 /* Weather.swift in Sources */,
 				FCC678EA2305EDD7003E1A60 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WeatherAPI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WeatherAPI/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WeatherAPI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WeatherAPI/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
